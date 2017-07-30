@@ -627,8 +627,7 @@ footer ul li h2 {
 	-webkit-text-fill-color: transparent;
 }
 footer ul li .social i {
-    margin-top: 30px;
-    margin-right: 20px;
+    margin: 5%;
     background: -webkit-linear-gradient(#fd3e4f, #fd3fb3);
 	background: -webkit-linear-gradient(top, #fd3e4f, #fd3fb3);
 	background: linear-gradient(top, #fd3e4f, #fd3fb3);
@@ -829,6 +828,16 @@ footer ul li .social i {
     }
 }
 
+@media screen and (max-width: 705px) {
+    .feature_icon i {
+        display: flex;
+        justify-content: center;
+    }
+    .features {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .nav {
         background-color: rgba(0,0,0,.5);
@@ -867,7 +876,7 @@ footer ul li .social i {
     .description h4 {
         font-size: 16px;
     }
-    .description{
+    .description {
         width: 300px;
     }
 }
