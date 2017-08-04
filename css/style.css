@@ -400,16 +400,16 @@
     list-style: none;
 }
 .description {
-    margin: 20px;
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 5% 0;
     width: 300px;
 }
 .description h2{
     color: white;
     font-size: 37px;
-    margin: 5% 0;
-    margin-bottom: 15%;
     line-height: 60px;
+    margin: 5% 0;
 }
 .description h2 span{
     color: #fd3e4f;
@@ -419,6 +419,7 @@
     font-size: 16px;
     line-height: 30px;
     font-weight: lighter;
+    margin: 5% 0;
 }
 .features_container {
     max-width: 680px;
@@ -494,7 +495,7 @@
 }
 .text_container_cta1 p {
     color: #555;
-    margin: 10% 0;
+    margin: 5% 0;
 }
 .text_container_cta1 .btn button {
     border-style: none;
@@ -508,7 +509,6 @@
     background: linear-gradient(45deg, #fd3fb3, #fd3f81 30%, #fd3e4f 79%);
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    margin: 5% 0;
 }
 .text_container_cta1 .btn button:hover {
     cursor: pointer;
@@ -546,7 +546,7 @@
     width: 300px;
 }
 .text_container_cta2 h2 {
-    margin-top: 10%;
+    margin: 5% 0;
     font-size: 32px;
 }
 .text_container_cta2 h2 span {
@@ -554,7 +554,7 @@
 }
 .text_container_cta2 p {
     color: #555;
-    margin: 10% 0;
+    margin: 5% 0;
 }
 .cta2 ul img {
     width: 550px;
@@ -661,6 +661,12 @@ footer ul li .social i {
     .description{
         width: 600px;
     }
+    .description h2 {
+        margin: 1% 0;
+    } 
+    .description h4 {
+        margin: 1% 0;
+    } 
 }
 
 @media screen and (max-width: 1115px) {
@@ -721,6 +727,7 @@ footer ul li .social i {
         background-image: -webkit-linear-gradient(rgba(0, 21, 51, 0.8), rgba(0,0,0,0.8)), url(../img/laptop.png);
         background-image: linear-gradient(rgba(0, 21, 51, 0.8), rgba(0,0,0,0.8)), url(../img/laptop.png);
         background-size: cover;
+        padding: 2%;
     }
     .cta1 .laptop_img {
         display: none;
@@ -753,6 +760,7 @@ footer ul li .social i {
     .cta2 {
         background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.95), rgba(137, 137, 137, 0.95)), url(../img/elements.png);
         background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(137, 137, 137, 0.95)), url(../img/elements.png);
+        padding: 2%;
     }
     .cta2 img {
         display: none;
@@ -920,9 +928,12 @@ footer ul li .social i {
     }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 320px) {
     .features_list li {
         width: 250px;
-        margin: 5px;
+        margin: 10% 2%;
+    }
+    .header .btn {
+        padding: 20px 0;
     }
 }
